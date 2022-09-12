@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}ADD Notes{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>ADD Notes</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.title }}</br>
+            {{ form.anons }}</br>
+            {{ form.full_text }}</br>
+            {{ form.date }}</br>
+            <span>{{ error }}</span>
+<!--            <input type="text" placeholder="Articles name" class="form-control"><br>-->
+<!--            <input type="text" placeholder="Articles anons" class="form-control"><br>-->
+<!--            <textarea class="form-control" placeholder="Articles text"></textarea><br>-->
+<!--            <input type="date" class="form-control"><br>-->
+<!--            <input type="time" class="form-control"><br>-->
+            <button class="btn btn-success" type="submit">Add article</button>
+        </form>
+    </div>
+{% endblock %}

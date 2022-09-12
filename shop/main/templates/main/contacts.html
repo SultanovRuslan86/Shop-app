@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ Contacts }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ Contacts }}</h1>
+        <p>80000-55678-77778</p>
+        <p>80000-33333-77778(fax)</p>
+        <p>Middle.earth@google.com</p>
+        <p>Middle.earth, Black Forest, Green street, 555</p>
+        <button class="btn btn-info">Call</button>
+        <button class="btn btn-info">Send message</button>
+
+<!--        {% for el in values %}-->
+<!--            {% if el == 'Hello' %}-->
+<!--                <p>{{ el|upper }}</p>-->
+<!--            {% endif %}-->
+<!--        {% endfor %}-->
+
+<!--        {% for el in obj %}-->
+<!--            <p>{{ el }}</p>-->
+<!--        {% endfor %}-->
+    </div>
+{% endblock %}
